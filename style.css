@@ -1277,3 +1277,510 @@ body {
     }
 
 }
+
+/* ==================================================
+   RESPONSIVE
+   Mobile-first: ออกแบบหลักสำหรับโทรศัพท์
+================================================== */
+
+
+/* ==================================================
+   1. มือถือจอเล็กมาก
+   เช่น iPhone SE / 320-375px
+================================================== */
+
+@media (max-width: 380px) {
+
+    .container {
+        padding: 10px 8px;
+        align-items: flex-start;
+    }
+
+    /* ---------- COVER ---------- */
+
+    .book-cover {
+        width: 100%;
+        min-height: calc(100dvh - 20px);
+
+        padding:
+            48px 18px
+            30px;
+
+        border-radius:
+            6px 18px 18px 6px;
+
+        box-shadow:
+            5px 7px 0 #d99b38,
+            8px 11px 20px
+            rgba(95, 64, 31, 0.12);
+    }
+
+
+    .bear {
+        width: 90px;
+        height: 82px;
+
+        transform:
+            scale(0.85);
+
+        margin-bottom:
+            5px;
+    }
+
+
+    .small-title {
+        font-size: 14px;
+
+        letter-spacing: 1.5px;
+
+        margin-bottom: 2px;
+    }
+
+
+    #coverName {
+        font-size:
+            clamp(30px, 11vw, 42px);
+
+        margin:
+            5px 0 10px;
+    }
+
+
+    .cover-message {
+        font-size: 13px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .honey-pot {
+        transform:
+            scale(0.85);
+
+        margin-bottom: 15px;
+    }
+
+
+    #openButton {
+        font-size: 13px;
+
+        padding:
+            11px 20px;
+    }
+
+
+    .tiny-message {
+        margin-top: 16px;
+
+        font-size: 12px;
+    }
+
+
+    /* ---------- LETTER ---------- */
+
+    .paper {
+        min-height:
+            calc(100dvh - 20px);
+
+        padding:
+            45px 21px 40px;
+
+        box-shadow:
+            5px 7px 0 #e7bd64,
+            8px 11px 20px
+            rgba(88, 60, 30, 0.12);
+    }
+
+
+    .paper::before {
+        left: 15px;
+    }
+
+
+    .paper-top {
+        font-size: 14px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .letter-title {
+        font-size:
+            clamp(24px, 8vw, 31px);
+
+        padding-right: 25px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .letter-bee {
+        right: 15px;
+
+        font-size: 20px;
+    }
+
+
+    .message {
+        font-size: 14px;
+
+        line-height: 2.15;
+    }
+
+
+    .ending {
+        font-size: 14px;
+
+        margin-top: 40px;
+    }
+
+
+    .signature {
+        font-size: 20px;
+    }
+
+
+    /* ลด decoration บางอัน
+       ไม่ให้บังบนจอเล็ก */
+
+    .bee-2,
+    .heart-1 {
+        display: none;
+    }
+
+}
+
+
+/* ==================================================
+   2. มือถือทั่วไป
+   381px - 480px
+   iPhone / Samsung ส่วนใหญ่จะอยู่ตรงนี้
+================================================== */
+
+@media
+(min-width: 381px)
+and
+(max-width: 480px) {
+
+    .container {
+        padding: 14px 12px;
+    }
+
+
+    .book-cover {
+        min-height:
+            calc(100dvh - 28px);
+
+        padding:
+            55px 24px 35px;
+    }
+
+
+    #coverName {
+        font-size:
+            clamp(36px, 11vw, 50px);
+    }
+
+
+    .paper {
+        min-height:
+            calc(100dvh - 28px);
+
+        padding:
+            50px 27px 45px;
+    }
+
+
+    .message {
+        font-size: 15px;
+
+        line-height: 2.2;
+    }
+
+}
+
+
+/* ==================================================
+   3. มือถือจอใหญ่
+   481px - 767px
+================================================== */
+
+@media
+(min-width: 481px)
+and
+(max-width: 767px) {
+
+    .container {
+        padding:
+            25px 20px;
+    }
+
+
+    .book-cover {
+        min-height: 620px;
+
+        padding:
+            60px 35px 40px;
+    }
+
+
+    .paper {
+        padding:
+            55px 38px 50px;
+    }
+
+
+    .message {
+        font-size: 16px;
+
+        line-height: 2.25;
+    }
+
+}
+
+
+/* ==================================================
+   4. Tablet
+   iPad / tablet
+================================================== */
+
+@media
+(min-width: 768px)
+and
+(max-width: 1024px) {
+
+    .page {
+        max-width: 560px;
+    }
+
+
+    .container {
+        padding:
+            45px 25px;
+    }
+
+
+    .book-cover {
+        min-height: 650px;
+
+        padding:
+            65px 50px 45px;
+    }
+
+
+    #coverName {
+        font-size: 55px;
+    }
+
+
+    .paper {
+        min-height: 750px;
+
+        padding:
+            60px 50px;
+    }
+
+
+    .paper::before {
+        left: 31px;
+    }
+
+
+    .message {
+        font-size: 17px;
+
+        line-height: 2.3;
+    }
+
+}
+
+
+/* ==================================================
+   5. Desktop / Laptop
+================================================== */
+
+@media (min-width: 1025px) {
+
+    .page {
+        max-width: 580px;
+    }
+
+
+    .container {
+        padding:
+            60px 30px;
+    }
+
+
+    .book-cover {
+        min-height: 660px;
+
+        padding:
+            70px 55px 50px;
+    }
+
+
+    #coverName {
+        font-size: 58px;
+    }
+
+
+    .paper {
+        min-height: 760px;
+
+        padding:
+            65px 55px;
+    }
+
+
+    .paper::before {
+        left: 34px;
+    }
+
+
+    .message {
+        font-size: 17px;
+
+        line-height: 2.35;
+    }
+
+
+    /* Desktop ให้ decoration ใหญ่ขึ้นนิดนึง */
+
+    .bee {
+        font-size: 25px;
+    }
+
+
+    .leaf {
+        font-size: 70px;
+    }
+
+}
+
+
+/* ==================================================
+   6. มือถือแนวนอน
+================================================== */
+
+@media
+(max-height: 500px)
+and
+(orientation: landscape) {
+
+    .container {
+        align-items: flex-start;
+
+        padding:
+            15px;
+    }
+
+
+    .book-cover {
+        min-height: 470px;
+
+        padding:
+            45px 30px 30px;
+    }
+
+
+    .bear {
+        transform:
+            scale(0.75);
+
+        margin:
+            -10px 0 -5px;
+    }
+
+
+    .honey-pot {
+        transform:
+            scale(0.8);
+
+        margin-bottom: 10px;
+    }
+
+}
+
+
+/* ==================================================
+   7. ป้องกันข้อความยาวทะลุจอ
+================================================== */
+
+#coverName,
+#letterName,
+.message {
+
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+}
+
+
+/* ==================================================
+   8. Safe Area สำหรับ iPhone
+================================================== */
+
+@supports (
+    padding:
+    max(0px)
+) {
+
+    .container {
+
+        padding-top:
+            max(
+                14px,
+                env(safe-area-inset-top)
+            );
+
+        padding-bottom:
+            max(
+                14px,
+                env(safe-area-inset-bottom)
+            );
+
+        padding-left:
+            max(
+                10px,
+                env(safe-area-inset-left)
+            );
+
+        padding-right:
+            max(
+                10px,
+                env(safe-area-inset-right)
+            );
+    }
+
+}
+
+
+/* ==================================================
+   9. ลด Animation
+   สำหรับคนที่ตั้ง Reduce Motion
+================================================== */
+
+@media (
+    prefers-reduced-motion:
+    reduce
+) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        scroll-behavior:
+            auto !important;
+
+        transition-duration:
+            0.01ms !important;
+    }
+
+}
