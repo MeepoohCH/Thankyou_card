@@ -1,0 +1,1279 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        "Mali",
+        sans-serif;
+
+    color: #55432f;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff9e9 0%,
+            #fff3c9 50%,
+            #f9e6a8 100%
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 22px 15px;
+}
+
+
+/* ==========================================
+   PAGE
+========================================== */
+
+.page {
+
+    display: none;
+
+    width: 100%;
+
+    max-width: 500px;
+}
+
+
+.page.active {
+
+    display: block;
+
+    animation:
+        pageOpen 0.7s ease;
+}
+
+
+/* ==========================================
+   BOOK COVER
+========================================== */
+
+.book-cover {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 620px;
+
+    padding:
+        55px 25px 40px;
+
+    background:
+        #fffaf0;
+
+    border:
+        3px solid #6f512f;
+
+    border-radius:
+        8px 25px 25px 8px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    box-shadow:
+        9px 11px 0 #d99b38,
+        14px 17px 0 rgba(95, 64, 31, 0.13);
+}
+
+
+/* เส้นเหมือนหนังสือ */
+
+.book-cover::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 17px;
+
+    top: 20px;
+
+    bottom: 20px;
+
+    width: 2px;
+
+    border-left:
+        2px dashed rgba(110, 79, 44, 0.28);
+}
+
+
+/* ==========================================
+   HONEY TOP
+========================================== */
+
+.honey-top {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 28px;
+
+    background:
+        #f4b942;
+
+    border-bottom:
+        2px solid #d89524;
+}
+
+
+.honey-top span {
+
+    position: absolute;
+
+    top: 18px;
+
+    width: 25px;
+
+    background:
+        #f4b942;
+
+    border-radius:
+        0 0 50px 50px;
+}
+
+
+.honey-top span:nth-child(1) {
+
+    left: 18%;
+
+    height: 30px;
+}
+
+
+.honey-top span:nth-child(2) {
+
+    left: 47%;
+
+    height: 18px;
+}
+
+
+.honey-top span:nth-child(3) {
+
+    right: 15%;
+
+    height: 38px;
+}
+
+
+/* ==========================================
+   CSS BEAR
+========================================== */
+
+.bear {
+
+    position: relative;
+
+    width: 105px;
+    height: 95px;
+
+    margin-bottom: 20px;
+}
+
+
+.bear-face {
+
+    position: absolute;
+
+    width: 95px;
+    height: 88px;
+
+    left: 5px;
+    top: 7px;
+
+    background:
+        #d9a457;
+
+    border:
+        3px solid #6d4c2d;
+
+    border-radius:
+        48% 48% 45% 45%;
+}
+
+
+.bear-ear {
+
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+
+    background:
+        #d9a457;
+
+    border:
+        3px solid #6d4c2d;
+
+    border-radius:
+        50%;
+
+    top: 0;
+}
+
+
+.left-ear {
+    left: 2px;
+}
+
+
+.right-ear {
+    right: 2px;
+}
+
+
+.bear-eye {
+
+    position: absolute;
+
+    width: 6px;
+    height: 8px;
+
+    background:
+        #493522;
+
+    border-radius:
+        50%;
+
+    top: 34px;
+}
+
+
+.left-eye {
+    left: 27px;
+}
+
+
+.right-eye {
+    right: 27px;
+}
+
+
+.bear-nose {
+
+    position: absolute;
+
+    width: 13px;
+    height: 9px;
+
+    background:
+        #493522;
+
+    border-radius:
+        50%;
+
+    left: 50%;
+    top: 50px;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.bear-mouth {
+
+    position: absolute;
+
+    width: 18px;
+    height: 10px;
+
+    left: 50%;
+    top: 57px;
+
+    transform:
+        translateX(-50%);
+
+    border-bottom:
+        2px solid #493522;
+
+    border-radius:
+        50%;
+}
+
+
+/* ==========================================
+   COVER TEXT
+========================================== */
+
+.small-title {
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    color:
+        #b47724;
+
+    font-size:
+        17px;
+
+    letter-spacing:
+        2px;
+
+    margin-bottom:
+        3px;
+}
+
+
+#coverName {
+
+    font-family:
+        "Mali",
+        sans-serif;
+
+    font-size:
+        clamp(
+            38px,
+            11vw,
+            58px
+        );
+
+    font-weight:
+        600;
+
+    color:
+        #c63c32;
+
+    margin:
+        8px 0 12px;
+
+    line-height:
+        1.25;
+
+    word-break:
+        break-word;
+}
+
+
+.little-line {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 9px;
+
+    color:
+        #c63c32;
+
+    margin-bottom:
+        18px;
+}
+
+
+.little-line span {
+
+    display: block;
+
+    width: 35px;
+    height: 1px;
+
+    background:
+        #c9a45d;
+}
+
+
+.cover-message {
+
+    color:
+        #71583a;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.9;
+
+    margin-bottom:
+        18px;
+}
+
+
+/* ==========================================
+   HONEY POT
+========================================== */
+
+.honey-pot {
+
+    position: relative;
+
+    width: 70px;
+    height: 60px;
+
+    margin:
+        0 auto 25px;
+}
+
+
+.pot-top {
+
+    position: absolute;
+
+    top: 0;
+    left: 8px;
+
+    width: 54px;
+    height: 15px;
+
+    background:
+        #9b6439;
+
+    border:
+        2px solid #674429;
+
+    border-radius:
+        50%;
+
+    z-index: 2;
+}
+
+
+.pot {
+
+    position: absolute;
+
+    top: 8px;
+    left: 5px;
+
+    width: 60px;
+    height: 48px;
+
+    background:
+        #d28a45;
+
+    border:
+        2px solid #674429;
+
+    border-radius:
+        8px 8px 25px 25px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pot span {
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    font-size:
+        14px;
+
+    color:
+        #fff0b4;
+
+    transform:
+        rotate(-4deg);
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+#openButton {
+
+    border:
+        2px solid #a82f29;
+
+    background:
+        #c94035;
+
+    color:
+        #fff9e9;
+
+    padding:
+        13px 25px;
+
+    border-radius:
+        50px;
+
+    font-family:
+        "Mali",
+        sans-serif;
+
+    font-size:
+        14px;
+
+    font-weight:
+        500;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 5px 0 #8d2924;
+
+    transition:
+        0.2s ease;
+}
+
+
+#openButton span {
+
+    margin-left:
+        5px;
+}
+
+
+#openButton:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 0 #8d2924;
+}
+
+
+#openButton:active {
+
+    transform:
+        translateY(4px);
+
+    box-shadow:
+        0 1px 0 #8d2924;
+}
+
+
+.tiny-message {
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    color:
+        #ae8b55;
+
+    font-size:
+        14px;
+
+    margin-top:
+        22px;
+}
+
+
+/* ==========================================
+   LETTER PAPER
+========================================== */
+
+.paper {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 720px;
+
+    padding:
+        52px 27px 48px;
+
+    background-color:
+        #fffdf2;
+
+    /*
+       เส้นสมุด
+    */
+
+    background-image:
+
+        linear-gradient(
+            #eadcb6 1px,
+            transparent 1px
+        );
+
+    background-size:
+        100% 36px;
+
+    border:
+        2px solid #806542;
+
+    border-radius:
+        5px;
+
+    box-shadow:
+        8px 10px 0 #e7bd64,
+        13px 16px 30px
+        rgba(88, 60, 30, 0.15);
+
+    overflow:
+        hidden;
+}
+
+
+/* เส้นแดงด้านซ้าย */
+
+.paper::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 21px;
+
+    width: 1px;
+
+    background:
+        rgba(204, 83, 72, 0.35);
+}
+
+
+/* ==========================================
+   TAPE
+========================================== */
+
+.tape {
+
+    position: absolute;
+
+    width: 95px;
+    height: 28px;
+
+    top: -5px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(-2deg);
+
+    background:
+        rgba(244, 201, 94, 0.55);
+
+    border-left:
+        2px dashed rgba(150, 110, 40, 0.18);
+
+    border-right:
+        2px dashed rgba(150, 110, 40, 0.18);
+}
+
+
+/* ==========================================
+   LETTER BEE
+========================================== */
+
+.letter-bee {
+
+    position: absolute;
+
+    right: 22px;
+    top: 52px;
+
+    font-size:
+        24px;
+
+    transform:
+        rotate(12deg);
+
+    animation:
+        beeFloat 2.5s ease-in-out infinite;
+}
+
+
+/* ==========================================
+   LETTER HEADER
+========================================== */
+
+.paper-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom:
+        27px;
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    color:
+        #b27b2e;
+
+    font-size:
+        16px;
+}
+
+
+.letter-title {
+
+    font-family:
+        "Mali",
+        sans-serif;
+
+    font-size:
+        clamp(
+            26px,
+            8vw,
+            38px
+        );
+
+    font-weight:
+        600;
+
+    color:
+        #c23d32;
+
+    margin-bottom:
+        13px;
+
+    padding-right:
+        30px;
+}
+
+
+.scribble-line {
+
+    width:
+        70px;
+
+    height:
+        4px;
+
+    margin-bottom:
+        30px;
+
+    border-top:
+        2px solid #d5a742;
+
+    border-radius:
+        50%;
+
+    transform:
+        rotate(-2deg);
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.message {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    font-family:
+        "Mali",
+        sans-serif;
+
+    font-size:
+        16px;
+
+    font-weight:
+        400;
+
+    line-height:
+        2.25;
+
+    color:
+        #4f4435;
+
+    white-space:
+        pre-line;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+/* ==========================================
+   ENDING
+========================================== */
+
+.ending {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    margin-top:
+        55px;
+
+    text-align:
+        center;
+
+    color:
+        #745b3d;
+
+    font-size:
+        15px;
+
+    line-height:
+        2;
+}
+
+
+.ending-heart {
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    color:
+        #c83e34;
+
+    font-size:
+        35px;
+
+    margin-bottom:
+        4px;
+}
+
+
+.signature {
+
+    margin-top:
+        22px;
+
+    text-align:
+        right;
+
+    font-family:
+        "Patrick Hand",
+        "Mali",
+        cursive;
+
+    font-size:
+        23px;
+
+    color:
+        #b67a28;
+
+    transform:
+        rotate(-2deg);
+}
+
+
+.footer-honey {
+
+    margin-top:
+        45px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    color:
+        #d39b3e;
+
+    font-size:
+        17px;
+}
+
+
+/* ==========================================
+   BACKGROUND DECORATIONS
+========================================== */
+
+.background-decoration {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    pointer-events:
+        none;
+
+    overflow:
+        hidden;
+}
+
+
+.background-decoration span {
+
+    position:
+        absolute;
+}
+
+
+.bee {
+
+    font-size:
+        22px;
+
+    opacity:
+        0.65;
+}
+
+
+.bee-1 {
+
+    top:
+        13%;
+
+    right:
+        7%;
+
+    animation:
+        beeFloat 3s ease-in-out infinite;
+}
+
+
+.bee-2 {
+
+    bottom:
+        14%;
+
+    left:
+        5%;
+
+    animation:
+        beeFloat 3.5s ease-in-out infinite;
+}
+
+
+.leaf {
+
+    font-family:
+        Georgia,
+        serif;
+
+    color:
+        rgba(94, 116, 55, 0.25);
+
+    font-size:
+        55px;
+}
+
+
+.leaf-1 {
+
+    top:
+        7%;
+
+    left:
+        4%;
+
+    transform:
+        rotate(-30deg);
+}
+
+
+.leaf-2 {
+
+    right:
+        3%;
+
+    bottom:
+        5%;
+
+    transform:
+        rotate(145deg);
+}
+
+
+.tiny-heart {
+
+    font-family:
+        Georgia,
+        serif;
+
+    color:
+        rgba(190, 60, 50, 0.2);
+
+    font-size:
+        35px;
+}
+
+
+.heart-1 {
+
+    top:
+        30%;
+
+    left:
+        5%;
+}
+
+
+.heart-2 {
+
+    bottom:
+        30%;
+
+    right:
+        5%;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.error-card {
+
+    background:
+        #fffaf0;
+
+    border:
+        2px solid #775738;
+
+    border-radius:
+        20px;
+
+    padding:
+        55px 30px;
+
+    text-align:
+        center;
+
+    box-shadow:
+        8px 10px 0 #e5b34e;
+}
+
+
+.error-bear {
+
+    font-size:
+        65px;
+
+    margin-bottom:
+        15px;
+}
+
+
+.error-card h1 {
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    font-size:
+        48px;
+
+    color:
+        #c23d32;
+
+    margin-bottom:
+        10px;
+}
+
+
+.error-card p {
+
+    line-height:
+        1.8;
+
+    margin-bottom:
+        15px;
+}
+
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes pageOpen {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(15px)
+            scale(0.98);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+@keyframes beeFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(8deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-10px)
+            rotate(-5deg);
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONE
+========================================== */
+
+@media
+(max-width: 380px) {
+
+    .container {
+
+        padding:
+            12px 9px;
+    }
+
+
+    .book-cover {
+
+        min-height:
+            570px;
+
+        padding:
+            50px 19px 35px;
+    }
+
+
+    .paper {
+
+        padding:
+            48px 22px 40px;
+    }
+
+
+    .message {
+
+        font-size:
+            15px;
+
+        line-height:
+            2.2;
+    }
+
+
+    .bear {
+
+        transform:
+            scale(0.9);
+
+        margin-bottom:
+            10px;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET / DESKTOP
+========================================== */
+
+@media
+(min-width: 768px) {
+
+    .container {
+
+        padding:
+            50px 20px;
+    }
+
+
+    .book-cover {
+
+        min-height:
+            650px;
+
+        padding:
+            65px 50px 45px;
+    }
+
+
+    .paper {
+
+        padding:
+            60px 50px;
+    }
+
+
+    .paper::before {
+
+        left:
+            32px;
+    }
+
+
+    .message {
+
+        font-size:
+            17px;
+    }
+
+}
