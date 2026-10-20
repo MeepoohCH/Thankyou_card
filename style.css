@@ -371,7 +371,7 @@ body {
         clamp(
             38px,
             11vw,
-            58px
+            50px
         );
 
     font-weight:
@@ -381,7 +381,7 @@ body {
         #c63c32;
 
     margin:
-        8px 0 12px;
+        20px 0 12px;
 
     line-height:
         1.25;
@@ -1003,7 +1003,7 @@ body {
         rgba(94, 116, 55, 0.25);
 
     font-size:
-        55px;
+        50px;
 }
 
 
@@ -1478,7 +1478,7 @@ and
 
     #coverName {
         font-size:
-            clamp(36px, 11vw, 50px);
+            clamp(36px, 11vw, 40px);
     }
 
 
@@ -1569,7 +1569,7 @@ and
 
 
     #coverName {
-        font-size: 55px;
+        font-size: 50px;
     }
 
 
@@ -1621,7 +1621,7 @@ and
 
 
     #coverName {
-        font-size: 58px;
+        font-size: 55px;
     }
 
 

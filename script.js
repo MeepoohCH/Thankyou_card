@@ -3,16 +3,22 @@
 // ========================================
 
 const validPeople = [
-    "test",
-    "p02",
-    "p03",
-    "p04",
-    "p05",
-    "p06",
-    "p07",
-    "p08",
-    "p09",
-    "p10"
+    "Mongkol",
+    "Anutara",
+    "sco_memory",
+    "Sasipan",
+    "Kulrat",
+    "Yuttapong",
+    "Somsak",
+    "Urasa",
+    "Kittikhun",
+    "Yutthana",
+    "Khwan",
+    "traffic_partner",
+    "Pairin",
+    "Site_logistics",
+    "Suwat",
+    "Man"
 ];
 
 
