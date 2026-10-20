@@ -16,9 +16,10 @@ const validPeople = [
     "Khwan",
     "traffic_partner",
     "Pairin",
-    "Site_logistics",
+    "SiteLogistics",
     "Suwat",
-    "Man"
+    "Man",
+    "Kaew_HR"
 ];
 
 
