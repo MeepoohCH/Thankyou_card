@@ -19,7 +19,7 @@ const validPeople = [
     "SiteLogistics",
     "Suwat",
     "Man",
-    "Kaew_HR"
+    "Kaew",
 ];
 
 
