@@ -20,6 +20,7 @@ const validPeople = [
     "Suwat",
     "Man",
     "Kaew",
+    "Yab"
 ];
 
 
