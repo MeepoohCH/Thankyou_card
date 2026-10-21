@@ -128,11 +128,11 @@ function showPerson(person) {
 
 
     document
-        .getElementById(
-            "message"
-        )
-        .textContent =
-            person.message;
+    .getElementById(
+        "message"
+    )
+    .innerHTML =
+        person.message;
 
 
     // เปลี่ยน title browser
