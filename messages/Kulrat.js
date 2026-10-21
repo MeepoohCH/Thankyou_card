@@ -1,10 +1,10 @@
 window.letterData = {
 
-    name: "พี่เบล",
+    name: "พี่เบลล์",
 
-    message: `ถึงพี่เบล ♡
+    message: `ถึงพี่เบลล์ ♡
 
-ถ้าจะให้หนูบอก First Impression ของพี่เบล
+ถ้าจะให้หนูบอก First Impression ของพี่เบลล์
 หนูคงบอกว่า...
 
 “พี่คนนี้หน้าตาใจดีจัง” 😊
