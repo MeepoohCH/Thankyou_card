@@ -1,6 +1,6 @@
 window.letterData = {
 
-    name: "พี่ศศิธร♡",
+    name: "พี่ศศิธร ♡",
 
     message: `ถึงพี่ธร ♡
 
