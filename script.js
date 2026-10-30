@@ -23,7 +23,7 @@ const validPeople = [
     "Yab",
     "Ohm",
     "Sasithorn",
-    "P'Top"
+    "Top"
 ];
 
 
